@@ -76,5 +76,13 @@ class PatientDischargeDetails(models.Model):
     OtherCharge=models.PositiveIntegerField(null=False)
     total=models.PositiveIntegerField(null=False)
 
-
-
+"""
+class payment_details(models.Model):
+    appointmentId=models.PositiveIntegerField()
+    patientId=models.PositiveIntegerField()
+    patientName=models.CharField(max_length=40)
+    doctorName=models.CharField(max_length=40)
+    amount=models.PositiveIntegerField()
+    payment_date=models.DateField(auto_now=True)
+    status=models.BooleanField(default=False)
+"""
