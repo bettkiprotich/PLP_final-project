@@ -103,9 +103,19 @@
       top: 50px;
     }
 
-    .download {
+    .downloadbtn {
       text-align: center;
       display: block;
+      border-radius: 1.5rem;
+      padding: 1%;
+      width: 20%;
+      cursor: pointer;
+      background: #b3adc2;
+      
+
+      .downloadbtn:hover {
+        background-color: #9b0f0f; 
+      }
     }
   </style>
 </head>
@@ -221,20 +231,14 @@
       <td></td>
 
       <td>
-        Total Rupees : {{total}}
+        Total : Ksh {{total}} 
       </td>
     </tr>
 
   </table>
 </div>
 <br><br>
-<div class="download">
-  <a style="background:red; width:500px;" href="{% url 'download-pdf' patientId  %}">Download</a>
-</div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
-
+<button class="downloadbtn">
+  <a style=" width:500px;" href="{% url 'download-pdf' patientId  %}"><strong>Download</strong></a>
+</button>
 {% endblock content %}
