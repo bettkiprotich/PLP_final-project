@@ -1,4 +1,4 @@
-## PLP_fINAL_PROJECT
+## FINAL_PROJECT
 ## Functions
 ### Admin
 - Signup their account. Then Login (No approval Required).
