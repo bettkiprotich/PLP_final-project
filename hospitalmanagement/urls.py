@@ -103,4 +103,5 @@ urlpatterns +=[
     path('patient-discharge', views.patient_discharge_view,name='patient-discharge'),
 
 ]
-+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
